@@ -25,6 +25,11 @@ module.exports = {
       },
     ]
   },
+  resolve: {
+    alias: {
+      '@mui/styled-engine': '@mui/styled-engine-sc'
+    }
+  },
   devtool: prod ? undefined : 'source-map',
   plugins: [
     new HtmlWebpackPlugin({
